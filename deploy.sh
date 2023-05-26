@@ -5,6 +5,7 @@ git push origin --delete $deploy_branch
 git checkout -b $deploy_branch
 
 sh deploy_basically-basic.sh
+sh deploy_chirpy.sh
 sh deploy_garden.sh
 sh deploy_gitbook.sh
 
