@@ -1,4 +1,4 @@
-theme=chripy
+theme=chirpy
 deploy_dir="$theme"_deploy
 
 [ -d $deploy_dir ] && rm -rf $deploy_dir
