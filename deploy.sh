@@ -1,7 +1,7 @@
 branch=deploy
 
-#git branch -D branch
-#git push origin --delete branch
+git branch -D branch
+git push origin --delete branch
 git checkout -b branch
 
 sh deploy_basically-basic.sh
