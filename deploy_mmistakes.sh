@@ -10,4 +10,4 @@ sh tools/init
 cd ../
 rm -rf $deploy_dir/.git
 rm -rf $deploy_dir/_posts
-[ -d "$theme"_override/force ] && cp -rf "$theme"_override/force/* $deploy_dir
+[ -d "$theme"_override ] && cp -rf "$theme"_override/* $deploy_dir
