@@ -9,6 +9,7 @@ sh deploy_chirpy.sh
 sh deploy_contrast.sh
 sh deploy_garden.sh
 sh deploy_gitbook.sh
+sh deploy_mmistakes.sh
 
 git add .
 git commit -m "Deploy" -m "`date`"
