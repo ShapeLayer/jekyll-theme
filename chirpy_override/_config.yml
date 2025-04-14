@@ -26,7 +26,7 @@ description: >- # used by seo meta and the atom feed
   학생과 개발자 사이
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: "https://jonghyeon.me"
+url: "https://blog.jonghyeon.me"
 
 github:
   username: ShapeLayer # change to your github username
