@@ -14,7 +14,7 @@ sh deploy.sh
 ```
 
 - `deploy_chirpy.sh`: Chirpy 테마를 `v7.5.0` 기준으로 배포
-- `chirpy_override/postdeploy.sh`: 프론트엔드 빌드 후 `bundle update`로 Ruby 의존성 최신화
+- `chirpy_override/postdeploy.sh`: 프론트엔드 빌드 후 `bundle update --conservative`로 Ruby 의존성 최신화
 
 ## 테마 사용자화 정의
 
