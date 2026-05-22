@@ -1,5 +1,6 @@
 theme=chirpy
 deploy_dir="$theme"_deploy
+# Latest stable Chirpy tag (kept explicit for reproducible deploy output).
 theme_version=v7.5.0
 
 [ -d $deploy_dir ] && rm -rf $deploy_dir
