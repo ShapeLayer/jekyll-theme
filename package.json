@@ -1,0 +1,14 @@
+{
+  "name": "shapelayer-jekyll-themes",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build-common.mjs"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.12"
+  },
+  "vendorSources": {
+    "graph-embedded-renderer": "git+https://github.com/ShapeLayer/graph-embedded-renderer.git#df42cb8681260698dc5ec7f0c3372a1f67d37d11",
+    "textip": "git+https://github.com/ShapeLayer/textip.git#e7f1283316bf6eda675ceadcb10e56285931e40b"
+  }
+}
