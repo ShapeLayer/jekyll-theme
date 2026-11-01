@@ -9,24 +9,20 @@ p
 
 a
   color: $link
+  text-decoration: inherit
   transition: .25s
-  box-shadow: 0 2px transparent
-  text-decoration-color: transparent
-  header &, footer &, nav &
-    font-weight: bold
-  header &, footer &, nav &:not(:hover)
-    color: inherit
+  border-radius: 5px
   article &:hover
-    text-decoration-color: inherit
-  body > header &:hover, body > footer &:hover
-    box-shadow: 0 2px
+    text-decoration: underline
+  header &, footer &, aside &
+    color: inherit
 
 hr
   border: 1px solid gray(100)
   margin: 2em 0
 
 blockquote
-  background: gray(12)
+  background: gray(10)
   color: light-dark(#555, #eee)
   border-left: 3px solid gray(60)
   padding: 1px 1.5em
@@ -72,6 +68,3 @@ code:not(pre code)
   margin: 0 .1em
   padding: .2em .4em
   opacity: .75
-
-header time, nav time
-  color: gray(100)

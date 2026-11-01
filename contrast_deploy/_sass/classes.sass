@@ -1,38 +1,51 @@
 .nowrap
   flex-wrap: nowrap
 
-.smooth
+.archive, .hover
   -webkit-font-smoothing: antialiased
+
+.meta time
+  color: gray(100)
 
 .full
   font-size: 1.5em
   width: 100%
   margin: .1em 0 .7em
 
-.hover nav:has(svg) a:hover
-  color: gray(100)
-  box-shadow: none
+.hover
+  a
+    box-shadow: 0 2px transparent
+    border-radius: 0
+  a:hover
+    box-shadow: 0 2px
+  nav:has(svg) a:hover
+    color: gray(100)
+    box-shadow: none
 
-.button a, .dark a
-  font-weight: inherit
-  border-radius: 5px
-
-.button a
+.button
   background: #46f
   color: #fff
-  padding: .25em 1em
+  padding: .5em 1em
   &:hover
-    background: light(25)
-    text-decoration-color: gray(0)
+    background: light(20)
+    text-decoration: inherit
 
-.dark a
-  background: light-dark(gray(22), gray(0))
-  margin: 0
+.dark
+  background: light-dark(gray(20), gray(10))
   padding: .4em .8em
   &:hover
-    background: light(100)
-    color: light(0)
-    box-shadow: none
+    background: gray(40)
+
+.archive
+  font-size: 1.1em
+  list-style-type: none
+  padding: 1px 0
+  li
+    margin: .5em 0
+  a:not(:hover)
+    color: inherit
+  a:hover
+    text-decoration: inherit
 
 .katex-display
   overflow: auto hidden

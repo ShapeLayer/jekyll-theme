@@ -1,0 +1,32 @@
+{
+  "basically-basic": {
+    "repository": "mmistakes/jekyll-theme-basically-basic",
+    "version": "1.4.5",
+    "commit": "8a65981de1279d838dd0605fedbd2a7350842559"
+  },
+  "chirpy": {
+    "repository": "cotes2020/jekyll-theme-chirpy",
+    "version": "v7.6.0",
+    "commit": "152093879e6319dac342454d8df75a3c3572315f"
+  },
+  "contrast": {
+    "repository": "niklasbuschmann/contrast",
+    "version": "v4.8",
+    "commit": "1c0cb322cc1faacd681ed6510a0d8452fb3b759d"
+  },
+  "garden": {
+    "repository": "Jekyll-Garden/jekyll-garden.github.io",
+    "version": null,
+    "commit": "a8df83dac02eaa826ac90328442947863fa595a0"
+  },
+  "gitbook": {
+    "repository": "sighingnow/jekyll-gitbook",
+    "version": null,
+    "commit": "a7d876936fe650c46eaf9eca92dc7afe0f1e1f17"
+  },
+  "mmistakes": {
+    "repository": "mmistakes/minimal-mistakes",
+    "version": "4.28.1",
+    "commit": "81f00a619fafea2f2d457da8be4788edf06a90be"
+  }
+}

@@ -3,7 +3,6 @@ body
   flex-direction: column
   min-height: 100vh
   margin: 0
-  box-sizing: border-box
   -webkit-text-size-adjust: 100%
 
 body > header, body > footer
@@ -12,31 +11,23 @@ body > header, body > footer
   justify-content: space-between
   align-items: center
 
-header a, footer a
-  display: inline-block
-
-footer a
-  margin: .75em 0
-
-nav
-  margin: .5em -1.3em
-  a
-    margin: 0 1.3em
-  svg
-    font-size: 1.1em
-    vertical-align: sub
-
-main nav
-  font-size: 1.1em
-  margin: 1.4em 0
-  div
-    margin: .5em 0
-
 header h1
   font-size: 1.75em
   margin: 0
   body > &
     font-size: 1.35em
 
-article, main
+nav
+  margin: .5em -1.3em
+  a
+    font-weight: bold
+    display: inline-block
+    margin: 0 1.3em
+  svg
+    font-size: 1.1em
+    vertical-align: sub
+
+article
   flex-grow: 1
+  footer
+    padding: 1em 0

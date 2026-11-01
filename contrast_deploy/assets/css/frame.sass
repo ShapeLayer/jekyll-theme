@@ -10,7 +10,7 @@ body
 
 body > *
   background: light(100)
-  background: light(100, 17)
+  background: light(100, 16)
   color: light(0, 100)
   padding: 1.75em calc(22% - 6rem)
   padding: clamp(1.5em, 4vw, 1.75em) max(1.5em, 22% - 6rem)
@@ -18,7 +18,7 @@ body > *
 
 body > header, body > footer
   background: light(20)
-  background: light(20, 17)
+  background: light(20, 16)
   color: light(100)
 
 {% if site.show_frame contains "." %}
@@ -28,7 +28,8 @@ body > header, body > footer
     background: 0 0/cover url({{ site.show_frame | relative_url }})
     background-attachment: fixed
     color-scheme: only light
-    padding: 1em calc(38% - 22rem)
+    margin: 1em 0
+    min-height: calc(100vh - 2em)
     > :first-child
       border-radius: 4px 4px 0 0
     > :last-child

@@ -23,3 +23,8 @@ package-lock.json
 !.vscode/tasks.json
 
 # Misc
+
+# Hidden system files
+*~
+.DS_Store
+Thumbs.db

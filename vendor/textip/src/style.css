@@ -1,0 +1,43 @@
+.bmg-tooltip {
+  position: fixed;
+  z-index: 10000;
+  box-sizing: border-box;
+  max-width: min(26rem, calc(100vw - 16px));
+  max-height: calc(100dvh - 16px);
+  overflow: auto;
+  padding: .4rem .6rem;
+  border: 1px solid #53616c;
+  border-radius: .4rem;
+  background: #172831;
+  color: #fff;
+  font: .9rem/1.55 system-ui, sans-serif;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  box-shadow: 0 5px 20px #0002;
+}
+.bmg-tooltip[hidden], .bmg-graphs [hidden] { display: none !important; }
+.bmg-math-term {
+  cursor: help;
+  pointer-events: all;
+}
+svg .bmg-math-term { pointer-events: bounding-box; }
+.bmg-math-borders {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  pointer-events: none;
+  z-index: 9998;
+}
+.bmg-math-border {
+  position: absolute;
+  box-sizing: border-box;
+  pointer-events: none;
+  border: 1px solid var(--bmg-math-border, #17857855);
+  border-radius: 3px;
+}
+.bmg-math-border.bmg-math-border-active {
+  border-color: var(--bmg-math-active-border, #178578);
+  border-width: 2px;
+}
