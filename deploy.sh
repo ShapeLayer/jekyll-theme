@@ -3,6 +3,7 @@ set -eu
 cd "$(dirname "$0")"
 [ -z "$(git status --porcelain)" ] || { echo 'Commit source changes before deploying.' >&2; exit 1; }
 source_commit=$(git rev-parse HEAD)
+git submodule update --init --recursive
 npm ci --no-audit --no-fund
 npm run build
 for theme in basically-basic chirpy contrast garden gitbook mmistakes; do
@@ -25,5 +26,7 @@ PYTHON
   git -C "$staging" add -f "${theme}_deploy"
 done
 git -C "$staging" add .
+# git archive omits submodule contents; preserve their pinned gitlinks.
+git ls-tree "$source_commit" vendor/graph-embedded-renderer vendor/textip | git -C "$staging" update-index --index-info
 git -C "$staging" commit -m "Deploy themes from $source_commit"
 git -C "$staging" push origin HEAD:deploy

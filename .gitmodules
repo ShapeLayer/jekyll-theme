@@ -1,0 +1,6 @@
+[submodule "vendor/graph-embedded-renderer"]
+	path = vendor/graph-embedded-renderer
+	url = https://github.com/ShapeLayer/graph-embedded-renderer.git
+[submodule "vendor/textip"]
+	path = vendor/textip
+	url = https://github.com/ShapeLayer/textip.git

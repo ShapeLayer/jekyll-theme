@@ -22,7 +22,9 @@
 - [graph-embedded-renderer](https://github.com/ShapeLayer/graph-embedded-renderer): `window.GraphRenderer`로 제공
 - [textip](https://github.com/ShapeLayer/textip): `window.mathTooltips`로 제공. MathJax 시작 전 설정하며 `\tooltip{수식}{설명}` 등을 지원
 
-두 라이브러리는 `package.json`의 `vendorSources`에 커밋을 기록하고 `vendor/`에 소스를 보관합니다.
+두 라이브러리는 `vendor/graph-embedded-renderer`와 `vendor/textip`의 Git 서브모듈로 관리합니다.
+처음 체크아웃할 때 `git clone --recurse-submodules`를 사용하거나, 기존 체크아웃에서 `git submodule update --init --recursive`를 실행합니다.
+서브모듈의 고정 커밋을 변경한 뒤 공통 자산을 다시 빌드하고 변경을 함께 커밋합니다.
 `npm ci && npm run build`로 브라우저용 JS/CSS를 생성합니다. 라이선스는 `common/assets/licenses/`에 포함합니다.
 
 게시물에서 그래프를 만드는 예:
